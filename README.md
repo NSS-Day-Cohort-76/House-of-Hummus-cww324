@@ -36,7 +36,34 @@
 Given the description and animation above...
 
 1. Create an ERD for this application before you begin.
+Table entrees {
+  id int [pk, increment]
+  name varchar
+  price float
+}
+
+Table vegetables {
+  id int [pk, increment]
+  type varchar
+  price float
+}
+
+Table sides {
+  id int [pk, increment]
+  title varchar
+  price float
+}
+
+Table purchases {
+  id int [pk, increment]
+  entreeId int [ref: > entrees.id]
+  vegetableId int [ref: > vegetables.id]
+  sideId int [ref: > sides.id]
+}
+
+
 1. Make a list of what modules need to be created to make your application as modular as possible. Create a **Dependency Graph** for the project to be reviewed once you are complete with the assessment.
+
 1. Create a **Sequence Diagram** that visualizes what your algorithm is for this project. We'll give you a minimal starting point.
 
 ```mermaid
