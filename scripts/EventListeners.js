@@ -19,7 +19,7 @@ const handleUserChoices = (changeEvent) => {
 document.addEventListener("change", handleUserChoices)
 
 document.addEventListener('click', async (event) => {
-    if (event.target.id === "placeOrder") {
+    if (event.target.id === "purchase") {
         await placeOrder()
     }
 })

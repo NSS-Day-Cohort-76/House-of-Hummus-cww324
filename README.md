@@ -56,10 +56,12 @@ sequenceDiagram
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Should transient state be represented in a database diagram? Why, or why not?
-   > Your answer here
+   > No, an ERD is meant to show permanent state and relationships and tables in a database and transient state is only data saved on memory and not to the file system so since it isn't permanent data it shouldn't be included in an ERD.
+
 2. In the **FoodTruck** module, you are **await**ing the invocataion of all of the component functions _(e.g. sales, veggie options, etc.)_. Why must you use the `await` keyword there? Explain what happens if you remove it.
-   > Your answer here
+   > You must use the await keyword since when it is pulling from an API or DB it takes time to render and grab the data and if you don't await it will try to run the function without the data it needs it is also requi
+
 3. When the user is making choices by selecting radio buttons, explain how that data is retained so that the **Purchase Combo** button works correctly.
-   > Your answer here
+   > In my eventListeners  I look for an event change and then store that data in a variable for their selection of the entree, side dish, and vegetable.  Then an Event LIstener to look for a click event on the button to then add items to the transient state, and it looks for the keys that I created in the transient state to know how to parse the data to the db.
 4. You used the `map()` array method in the self assessment _(at least, you should have since it is a learning objective)_. Explain why that function is helpful as a replacement for a `for..of` loop.
-   > Your answer here
+   > .map() is very useful in replacing for...of loops, it creates a new array as it iterates over every item of the target array and you can easily manipulate the data with .map().  it's shorter and easier to read and can easily be chained with other functions

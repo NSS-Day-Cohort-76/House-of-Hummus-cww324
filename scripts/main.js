@@ -34,7 +34,7 @@ const renderAllHTML = async () => {
     </article>
     
     <article class="customerOrders">
-        <button id="placeOrder">Purchase Combo</button>
+        <button id="purchase">Purchase Combo</button>
         ${ordersHTML}
     </article>
 `   
